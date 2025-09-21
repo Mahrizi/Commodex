@@ -8,7 +8,7 @@ import psycopg2, psycopg2.extras
 # Get DB connection URL from environment variable set in Render
 DATABASE_URL = os.environ.get("DATABASE_URL")
 
-app = FastAPI(title="Price Tracker API", version="1.0")
+app = FastAPI(title="Commodex API", version="1.0")
 
 def query(sql, params=None):
     conn = psycopg2.connect(DATABASE_URL)
